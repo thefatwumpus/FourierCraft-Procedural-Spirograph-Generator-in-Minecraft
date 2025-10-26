@@ -22,7 +22,10 @@ Where:
 ## Requirements
 - Minecraft Java Edition  
 - RCON enabled in `server.properties`  
-- Python 3.12  
+- Python 3.12
+- enable-rcon=true
+- Set your RCON password in server.properties (e.g., rcon.password=MySecret123)
+- Make sure rcon.port=25575
 
 ## Developed By
 **Wesley**  
