@@ -7,7 +7,7 @@ class MinecraftRCON:
     def __init__(self):
         self.sock = socket.socket()
         self.sock.connect(('localhost', 25575))
-        packet = struct.pack('<ii', 1, 3) + b'python\x00\x00'
+        packet = struct.pack('<ii', 1, 3) + b'MySecret123\x00\x00'
         self.sock.send(struct.pack('<i', len(packet)) + packet)
         self.sock.recv(4096)
     
